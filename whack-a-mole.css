@@ -1,0 +1,83 @@
+body {
+  background: conic-gradient(from .5turn at 50% 110%, white, orange);
+  height: 95vh;
+  font-family: cursive;
+}
+
+#timeLeft {
+  position: absolute;
+  top: 0px;
+  left: 400px;
+}
+
+#timeLeftLabel {
+  position: absolute;
+  top: 0px;
+  left: 255px;
+}
+
+#score {
+  position: absolute;
+  top: 0px;
+  left: 175px;
+}
+
+#startButton {
+  background: aquamarine;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 70px;
+  right: 430px;
+  font-family: cursive;
+}
+
+.easyButton, .mediumButton, .hardButton {
+  background: aquamarine;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.easyButton {
+  position: absolute;
+  right: 50px;
+  top: 200px;
+}
+
+.mediumButton {
+  position: absolute;
+  right: 30px;
+  top: 300px;
+}
+
+.hardButton {
+  position: absolute;
+  right: 50px;
+  top: 400px;
+}
+
+.grid {
+  width: 537px;
+  height: 537px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightblue;
+}
+
+.square {
+  height: 175px;
+  width: 175px;
+  border: 2px solid black;
+}
+
+.mole {
+  background-image: url('images/mole-image.png');
+  background-size: cover;
+
+}
+
+.redButton {
+  background-color: red;
+  color: white;
+}
