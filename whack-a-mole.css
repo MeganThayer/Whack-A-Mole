@@ -28,7 +28,7 @@ body {
   font-weight: bold;
   position: absolute;
   bottom: 70px;
-  right: 430px;
+  left: 230px;
   font-family: cursive;
 }
 
@@ -41,19 +41,19 @@ body {
 
 .easyButton {
   position: absolute;
-  right: 50px;
+  left: 600px;
   top: 200px;
 }
 
 .mediumButton {
   position: absolute;
-  right: 30px;
+  left: 600px;
   top: 300px;
 }
 
 .hardButton {
   position: absolute;
-  right: 50px;
+  left: 600px;
   top: 400px;
 }
 
