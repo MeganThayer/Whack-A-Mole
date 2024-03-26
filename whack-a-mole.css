@@ -22,12 +22,18 @@ body {
   left: 175px;
 }
 
+#scoreLabel {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+
 #startButton {
   background: aquamarine;
   font-size: 2rem;
   font-weight: bold;
   position: absolute;
-  bottom: 70px;
+  top: 650px;
   left: 230px;
   font-family: cursive;
 }
@@ -60,6 +66,8 @@ body {
 .grid {
   width: 537px;
   height: 537px;
+  position: absolute;
+  top: 80px;
   display: flex;
   flex-wrap: wrap;
   background-color: lightblue;
@@ -80,4 +88,242 @@ body {
 .redButton {
   background-color: red;
   color: white;
+
+  @media(min-width:900px) {
+  #startButton {
+    left: 320px;
+  }
+  .grid {
+    position: absolute;
+    left: 100px;
+  }
+  .easyButton, .mediumButton, .hardButton {
+    left: 650px;
+  }
+  #timeLeft {
+    left: 600px;
+  }
+  #timeLeftLabel {
+    left: 450px;
+  }
+  #scoreLabel {
+    left: 100px;
+  }
+  #score {
+    left: 250px;
+  }
+}
+
+@media(min-width:1100px) {
+  #startButton {
+    left: 495px;
+  }
+  .grid {
+    position: absolute;
+    left: 275px;
+  }
+  .easyButton, .mediumButton, .hardButton {
+    left: 825px;
+  }
+  #timeLeft {
+    left: 775px;
+  }
+  #timeLeftLabel {
+    left: 625px;
+  }
+  #scoreLabel {
+    left: 275px;
+  }
+  #score {
+    left: 425px;
+  }
+}
+
+@media (min-width:1300px) {
+  #startButton {
+    left: 670px;
+  }
+  .grid {
+    position: absolute;
+    left: 450px;
+  }
+  .easyButton, .mediumButton, .hardButton {
+    left: 1000px;
+  }
+  #timeLeft {
+    left: 950px;
+  }
+  #timeLeftLabel {
+    left: 800px;
+  }
+  #scoreLabel {
+    left: 450px;
+  }
+  #score {
+    left: 600px;
+  }
+}
+
+@media(max-height:740px) {
+  #startButton {
+    position: absolute;
+    left: 600px;
+    top: 500px;
+    bottom: auto;
+  }
+}
+
+@media(max-height:630px) {
+  .square {
+    height: 125px;
+    width: 125px;
+  }
+  .grid {
+    height: 387px;
+    width: 387px;
+  }
+  .easyButton {
+    top: 80px;
+    left: 400px;
+  }
+  .mediumButton {
+    top: 140px;
+    left: 400px;
+  }
+  .hardButton {
+    top: 200px;
+    left: 400px;
+  }
+  #startButton {
+    top: 260px;
+    left: 400px;
+  }
+}
+
+@media(max-width:750px) {
+  .square {
+    height: 125px;
+    width: 125px;
+  }
+  .grid {
+    height: 387px;
+    width: 387px;
+  }
+  .easyButton {
+    top: 80px;
+    left: 400px;
+  }
+  .mediumButton {
+    top: 140px;
+    left: 400px;
+  }
+  .hardButton {
+    top: 200px;
+    left: 400px;
+  }
+  #startButton {
+    top: 260px;
+    left: 400px;
+    bottom: auto;
+  }
+}
+
+@media(max-height:465px){
+  .square {
+    height: 40px;
+    width: 40px;
+  }
+  .grid {
+    height: 132px;
+    width: 132px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+  }
+  .easyButton {
+    font-size: 20px;
+    left: 145px;
+    top: 45px;
+  }
+  .mediumButton {
+    font-size: 20px;
+    left: 145px;
+    top: 80px;
+  }
+  .hardButton {
+    font-size: 20px;
+    left: 145px;
+    top: 115px;
+  }
+  #startButton {
+    font-size: 20px;
+    left: 145px;
+    top: 150px;
+  }
+  #score, #scoreLabel, #timeLeft, #timeLeftLabel {
+    font-size: 15px;
+  }
+  #scoreLabel {
+    left: 10px;
+  }
+  #score {
+    position: absolute;
+    left: 100px;
+  }
+  #timeLeftLabel {
+    left: 120px;
+  }
+  #timeLeft {
+    left: 200px;
+  }
+}
+
+@media(max-width:550px) {
+  .square {
+    height: 40px;
+    width: 40px;
+  }
+  .grid {
+    height: 132px;
+    width: 132px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+  }
+  .easyButton {
+    font-size: 20px;
+    left: 145px;
+    top: 45px;
+  }
+  .mediumButton {
+    font-size: 20px;
+    left: 145px;
+    top: 80px;
+  }
+  .hardButton {
+    font-size: 20px;
+    left: 145px;
+    top: 115px;
+  }
+  #startButton {
+    font-size: 20px;
+    left: 145px;
+    top: 150px;
+  }
+  #score, #scoreLabel, #timeLeft, #timeLeftLabel {
+    font-size: 15px;
+  }
+  #scoreLabel {
+    left: 10px;
+  }
+  #score {
+    left: 100px;
+  }
+  #timeLeftLabel {
+    left: 120px;
+  }
+  #timeLeft {
+    left: 200px;
+  }
+}
 }
